@@ -16,3 +16,8 @@ Node *START = NULL;
 
 //deklarasi prosedur addNode 
 void addNode()
+{
+
+    //pembuatan node dan pemberian value untuk data noMhs dan nama
+    Node *newNode = new Node(); //step 1 buat node baru
+}

@@ -20,3 +20,5 @@ struct mode
     Node *prev;
 };
 
+//deklarasi pointer START dan pemberian nilai
+Node *START = NULL;

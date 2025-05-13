@@ -159,4 +159,24 @@ bool listempty()
         return (START == NULL);
 }
 
+//prosedur traverse untuk menampilkan data secara urut
+void traverse()
+{
+    if (listempty())
+    {
+           cout << "\nList is empty" << endl;
+
+    }
+    else 
+    {
+        cout << "\nRecords in ascending order or roll number are: " << endl;
+        Node *currentNode = START; //step 1
+        while (currentNode->next != NULL)
+        {
+            cout << currentNode->noMhs << " " << curren->name << endl; 
+            currentNode = currentNode->prev;
+        }
+    }
+    
+}
 

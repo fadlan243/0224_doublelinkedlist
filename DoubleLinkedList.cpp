@@ -70,6 +70,11 @@ void addNode()
         newNode->prev = previous; //step 5: make the previous field of the new node
 
         //kondisi jika current tidak sama dengan null
+        if(previous != NUILL)
+        {
+            current -> prev = newNode; //step 6 make the previous field of
+        }
+        //kondisi jika if previous tidak sama dengan null
         
     }
 }

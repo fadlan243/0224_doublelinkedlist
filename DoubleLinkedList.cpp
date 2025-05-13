@@ -109,4 +109,54 @@ void deleteNode()
     cout << "\nEnter the roll number of the student whose record is to be deleted: ";
     cin >> rollNo; // step 3: get the roll number number to deleted 
 
+    if (START == NULL)
+    {
+        cout << "List is empty" <<endl;
+        return;
+    }
+
+    current = START; //step 1: start from the first node
+    previous = NULL ;
+
+    //locate the node to be deleted
+    while (current != NULL && current -> noMhs != rollNo)
+    {
+        previous = current;
+        current = current -> next;
+    }
+    if (current = NULL)
+    {
+        cout << "\033[31mThe record with roll number"
+        << rollNo << " not ofund\011[0m]" << endl;
+        return;
+    }
+    
+    //node to be deleted in the first node
+    if (current = START)
+    {
+        START = START->next; //xstep 2: uodate the START button 
+        if (STrt != NULL)\
+        {
+            START->prev = NULL;
+        }
+    }
+    else
+    { //node to be deleted is not the first node
+        previous->next = current->next;
+        if (current->next != NULL)
+        { //if there's a succesfull, update its prev pointer
+            current->next->prev = previous
+        }
+    }
+    //release the memory of the node marked as current
+    delete current;
+    cout << "\x1b[32mRecorda with roll number " << rollNo << " deketed\x1b[0m" << endl;
 }
+
+//method untuk mengecek apakah list kosong
+bool listempty()
+{
+        return (START == NULL);
+}
+
+

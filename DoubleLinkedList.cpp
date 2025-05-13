@@ -177,6 +177,23 @@ void traverse()
             currentNode = currentNode->prev;
         }
     }
-    
 }
+void revtraverse()
+{
+     if (listempty())
+    {
+           cout << "\nList is empty" << endl;
 
+    }
+    else 
+    {
+        cout << "\nRecords in ascending order or roll number are: " << endl;
+        Node *currentNode = START; //step 1
+        while (currentNode->next != NULL)
+        {
+            cout << currentNode->noMhs << " " << curren->name << endl; 
+            currentNode = currentNode->prev;
+        }
+    }
+}
+//prosedur untuk mencari data dan menampilkan data yang dicari

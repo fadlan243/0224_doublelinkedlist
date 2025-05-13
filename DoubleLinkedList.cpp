@@ -86,3 +86,16 @@ void addNode()
         }
     }
 }
+
+//pembuatan function search untuk mencari data
+bool search (int rollNO, Node **previous, node **current)
+{
+    *previous = NULL;
+    *current = START;
+    while (*current != && (*current)-> noMhs != rollNO)
+    {
+        *previous = *current;
+        *current = (*current) -> next; 
+    }
+    return; (*current != NULL);
+}

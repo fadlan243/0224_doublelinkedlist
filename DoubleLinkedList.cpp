@@ -25,4 +25,17 @@ void addNode()
     cout << \"nEnter the name of the student :";
     cin >> newNode-> name; //assing value the data field of th 
 
+    //insert the new node in the field
+    // kondisi jika star = null atau noMhs node baru <= noMhs start
+
+    if(START == NULL || newNode->noMhs <= START->noMhs)
+    {
+        //steo 1 insert the new nide at the beginning
+        //kondisi jika start tidak kosong dan noMhs node baru sama dengan noMhs
+        if(START |= NULL && newNode -> noMhs == START -> noMhs)
+        {
+            cout << "\033[31Duplicate roll numbers not allowed\033[0m" endl;
+            return;
+        }
+    }
 }
